@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Stack {
+            constructor(){
+                this.items = []
+                this.count = 0
+
+            }
+            //Add element to top of stack
+            push(element) {
+                this.items[this.count] = element
+                this.count += 1
+                console.log('${element} added to ${this.count}')
+                return this.count -1
+            }
+        }
+        pop() {
+            if(this.count == 0) return undefined
+            let deleteitem = this.items[this.count -1]
+            this.count -= 1
+            console.log('${deleteitem} removed')
+            return deleteitem
+
+        }
+            
+                
+
+        const stack = new Stack()
+        
+        stack.push(100)
+        stack.push(200)
+        stack.push(300)
+
+        stack.pop()
+        stack.pop()
+        stack.pop()
+        stack.pop()
+
+
+    
+    </script>
+    
+</body>
+</html>

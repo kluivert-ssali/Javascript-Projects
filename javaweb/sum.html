@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add.com</title>
+    </head>
+    <body>
+        <h1 style="color: red;">ADDITION</h1>
+        <script type="text/javascript">
+        function Add(){
+            var N1, N2;
+            N1 = parseInt(document.getElementById('num1').value);
+            N2 = parseInt(document.getElementById('num2').value);
+            document.getElementById('printvalue').innerHTML = N1 - N2;
+        }
+        </script>
+        <br>
+        <br>
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <button type="button" onclick="Add()">Add</button>
+        <h2 id="printvalue"></h2>
+        <br>
+        
+    </body>
+</html>
